@@ -4,220 +4,190 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css"/>
     <link rel="stylesheet" href="mediaqueries.css"/>
     <link rel="stylesheet" href="loader.css"/>
-    <link rel="stylesheet" href="fancy.css"/>
+    <link rel="stylesheet" href="cvButton.css"/>
+    <link rel="stylesheet" href="work.css"/>
+    <link rel="stylesheet" href="background.css"/>
+    <link rel="stylesheet" href="textAnims.css"/>
     <script src ="loader.js" ></script>
     
 </head>
 <body>
-    <div class="holdLoader">
+    <!-- <div id="preloader">
         <div class ="loader"></div>
-    </div>
-    <nav id="desktop-nav">
-        <div class="logo">Juan Felix</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <button  class ="fancyButton" onclick="window.open('./assets/Juan-Felix-Pangestu_CV.pdf')">
-                    <span> CV </span>
-                </button>
-            </ul>
-        </div>
-    </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Juan Felix</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
-        
-        <div class ="section_pic-container">
-            <img src="./assets/LinkedInProfile.jpg" alt="Juan Felix" class="profile-pic"/>
-        </div>
-        <div class ="section_text">
-            <p class="section_text_p1">Hello, I'm</p>
-            <h1 class="title">Juan Felix</h1>
-            <p class ="section_text_p2">Fullstack Developer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/Juan-Felix-Pangestu_CV.pdf')">
-                    Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact me
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/jfelixpangestu/'"/>
-                <img src="./assets/github.png" alt="Github Profile" class="icon" onclick="location.href='https://github.com/cdfelixj'"/>
-            </div>
-        </div>
-    </section>
-    <section id="about">
-        <p class ="section_text_p1">Get to Know More</p>
-        <h1 class ="title">About Me</h1>
-        <div class ="section-container">
-            <div class="section_pic-container">
-                <img src="./assets/LinkedInProfile.jpg" alt="Profile Picture" class ="about-pic"/>
-            </div>
-            <div class ="about-details-container">
-                <div class = "about-container">
-                    <div class ="details-container">
-                        <img src="./assets/experience.png" alt="Experience Icon" class ="icon"/>
-                        <h3>Experience</h3>
-                        <p>2+ years <br /> Frontend Development</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education Icon" class ="icon"/>
-                        <h3>Education</h3>
-                        <p>BSc Business Computing <br /> Frontend Development</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nesciunt nulla fuga est non laborum voluptate, nihil neque eum consequuntur esse suscipit ratione eos a cumque modi praesentium. Atque, accusantium!
-
-                    </p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
-    </section>
-    <section id ="experience">
-        <p class="section_text_p1"> Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class ="experience-details-container">
-            <div class="about-container">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Software Engineer Intern</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
-                            <div>
-                                <h3>Java</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                    </div>
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Software Engineer Intern</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
-                            <div>
-                                <h3>Python</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
-                            <div>
-                                <h3>Java</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
-    </section>
-    <section id ="contact">
-        <p class="section_text_p1">Get in Touch</p>
-        <h1 class ="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class = "contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
-                <p><a href="mailto:cd.felixj@gmail.com">cd.felixj@gmail.com</a></p>
-            </div>
-            <div class = "contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
-                <p><a href="https://www.linkedin.com/in/jfelixpangestu/">LinkedIn</a></p>
-            </div>
-        </div>
-    </section>
+    </div> -->
     
-    <footer>
-    </footer>
+    
+    <div id="content" style="display: block;">
+        <nav id="desktop-nav">
+            <div class="logo"><a href="/">cdfelixj</a></div>
+            <div>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <button  class ="fancyButton" onclick="window.open('./assets/Juan-Felix-Pangestu_CV.pdf')">
+                        <span class="noselect"> CV </span>
+                    </button>
+                </ul>
+            </div>
+        </nav>
+        <nav id="hamburger-nav">
+            <div class="logo">Juan Felix</div>
+            <div class="hamburger-menu">
+                <div class="hamburger-icon" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="menu-links">
+                    <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+                </div>
+            </div>
+        </nav>
+        
+        <section id="profile">
+            
+            
+            <div class ="section_text">
+                <h1 class="title animation">Yo! Call me Felix </h1>
+                <p class ="section_text_p2">
+                    An Aspiring SWE hoping to contribute 
+                    and create amazing tech things to the world!
+                </p>
+
+                <p class = "section_text_p1">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi at eaque voluptatem suscipit, ad minima nostrum a harum, necessitatibus architecto optio atque repellendus nisi velit quae vitae. Laboriosam, temporibus reprehenderit!
+                </p>
+                
+                <div class="btn-container">
+    
+                    <button class="fancyButton" onclick="location.href='./#contact'">
+                        Contact me
+                    </button>
+                </div>
+                
+            </div>
+        </section>
+        <section id="about">
+            <p class ="section_text_p1">Get to Know More</p>
+            <h1 class ="title">About Me</h1>
+            <div class ="section-container">
+                <div class="section_pic-container">
+                    <img src="./assets/LinkedInProfile.jpg" alt="Profile Picture" class ="about-pic"/>
+                </div>
+                <div class ="about-details-container">
+                    <div class = "about-container">
+                        <div class ="details-container">
+                            <img src="./assets/experience.png" alt="Experience Icon" class ="icon"/>
+                            <h3>Experience</h3>
+                            <p>2+ years <br /> Frontend Development</p>
+                        </div>
+                        <div class="details-container">
+                            <img src="./assets/education.png" alt="Education Icon" class ="icon"/>
+                            <h3>Education</h3>
+                            <p>BSc Business Computing <br /> Frontend Development</p>
+                        </div>
+                    </div>
+                    <div class="text-container">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nesciunt nulla fuga est non laborum voluptate, nihil neque eum consequuntur esse suscipit ratione eos a cumque modi praesentium. Atque, accusantium!
+
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'"/>
+        </section>
+        <section id ="experience">
+            
+            <h1 class="title">Skills & Experience</h1>
+            <div class ="experience-details-container">
+                <div class="about-container ">
+                    <div class="details-container col-md-3">
+                        <h2 class="experience-sub-title">Software Engineer Intern</h2>
+                        <div class="article-container right-about-container">
+                            
+                        </div>
+                    </div>
+                    <div class="details-container col-md-9">
+                        <h2 class="experience-sub-title">Software Engineer Intern</h2>
+                        <div class="article-container">
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
+                                <div>
+                                    <h3>HTML</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
+                                <div>
+                                    <h3>CSS</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
+                                <div>
+                                    <h3>JavaScript</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
+                                <div>
+                                    <h3>Python</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            <article>
+                                <img src="./assets/checkmark.png" alt="Experience icon" class ="icon"/>
+                                <div>
+                                    <h3>Java</h3>
+                                    <p>Experienced</p>
+                                </div>
+                            </article>
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'"/>
+        </section>
+        <section id ="contact">
+            <p class="section_text_p1">Get in Touch</p>
+            <h1 class ="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class = "contact-info-container">
+                    <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+                    <p><a href="mailto:cd.felixj@gmail.com">cd.felixj@gmail.com</a></p>
+                </div>
+                <div class = "contact-info-container">
+                    <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                    <p><a href="https://www.linkedin.com/in/jfelixpangestu/">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+        </footer>
+    </div>
+    
 
     <script src ="script.js" ></script>
     

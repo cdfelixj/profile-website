@@ -87,12 +87,13 @@
     visibility: hidden;
   }
 
+  
   html, body {
     height: 100%;
     margin: 0;
     
   }
-  .holdLoader {
+  #preloader {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -103,3 +104,7 @@
 
   
   
+
+#content.loaded {
+  display: block;
+}

@@ -1,0 +1,61 @@
+.fancyButton {
+    width: 150px;
+    height: 50px;
+    border: 1px solid #1e1e1e;
+    font-size: 20px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 0;
+    transition: 1s;
+    color: #c1bc9d;
+    font-family: sans-serif;
+    background-color: #c1bc9d;
+  }
+  
+  .fancyButton::before,
+  .fancyButton::after {
+    position: absolute;
+    background: #1e1e1e;
+    z-index: -1;
+    transition: 1s;
+    content: "";
+    
+  }
+  
+  .fancyButton::before {
+    height: 50px;
+    width: 130px;
+    background-color: #1e1e1e;
+  }
+  
+  .fancyButton::after {
+    width: 150px;
+    height: 30px;
+  }
+  
+  .noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .fancyButton:hover::before {
+    width: 0px;
+    background: #1e1e1e;
+  }
+  
+  .fancyButton:hover::after {
+    height: 0px;
+    background: #1e1e1e;
+  }
+  
+  .fancyButton:hover {
+    background: #1e1e1e;
+  }

@@ -25,7 +25,7 @@ p {
 
 /* TRANSITION */
 
-a, .btn {
+a {
     transition:  300nms ease;
 }
 
@@ -39,13 +39,13 @@ h3 {
 nav, 
 .nav-links {
     display: flex;
+    height: 10vh;
 }
 
 nav {
     justify-content: space-around;
     align-items: center;
-    height: 10vh;
- 
+    
 }
 
 
@@ -53,6 +53,11 @@ nav {
     gap: 2rem;
     list-style: none;
     font-style: 1.5rem;
+    height: 5vh;
+}
+
+li {
+    margin: auto;
 }
 
 a {
@@ -60,6 +65,8 @@ a {
     text-decoration: none;
     text-decoration-color: #c1bc9d;
 }
+
+
 
 a:hover {
     color: grey;
@@ -162,8 +169,6 @@ section {
     margin: 0 10rem;
     box-sizing: border;
     min-height: fit-content;
-
-    
 }
 
 .section-container {
@@ -173,15 +178,12 @@ section {
 /* PROFILE SECTION */
 
 
-   
-
 #profile {
     display: flex;
-    justify-content: center;
+    margin-left: 15rem;
+    justify-content: baseline;
     gap: 5rem;
     height: 80vh;
-    background: #1e1e1e;
-    border-radius: 5%;
 }
 
 .section_pic-container {
@@ -198,36 +200,39 @@ section {
 }
 
 .section_text p {
-    font-weight: 600;
+    font-weight: 100;
 }
 
 .section_text_p1 {
-    text-align: center;
+    text-align: left;
+    font-weight: 10;
+    font-size: 1rem;
+    margin-right: 40rem;
 }
 
 
 .section_text_p2 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
+    text-align: left;
 }
 
 .title {
     font-size: 3rem;
-    text-align: center;
+    text-align: left;
     color: white;
 }
 
-#socials-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    gap:1rem;
-}
+
 
 
   
    
-   
+   /* BUTTON */
+
+.btn-container {
+    margin-top: 2rem;
+}
 
 /* ICON */
 
@@ -236,51 +241,8 @@ section {
     height: 2rem;
 }
 
-/* BUTTONS */
-
-.btn-container {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-
-}
-
-.btn {
-    font-weight: 600;
-    transition: all 300ms ease;
-    padding: 1rem;
-    width: 8rem;
-    border-radius: 2rem;
-}
-
-.btn-color-1, .btn-color-2 {
-    border: #c1bc9d 0.1rem solid;
-    
-}
-
-.btn-color-1:hover, .btn-color-2:hover {
-    cursor: pointer;
-}
-
-.btn-color-1, .btn-color-2 {
-    background: rgb(53,53,53);
-    color: white;
-}
-
-.btn-color-1:hover, .btn-color-2:hover {
-    background: #c1bc9d;
-    border: #ff0000 0.1rem solid;
-}
-
-.profile-pic {
-    border-radius: 30%;
-}
 
 
-
-.btn-container {
-    gap: 3rem;
-}
 
 /* ABOUT SECTION */
 
@@ -289,10 +251,11 @@ section {
 }
 
 .about-container {
-    gap: 2rem;
+    display: flex;
     margin-bottom: 2rem;
     margin-top: 2rem;
 }
+
 
 .about-details-container {
     justify-content: center;
@@ -335,7 +298,17 @@ section {
     
 }
 
+/* WORK */
+
+#work {
+    
+    border-radius: 5%;
+}
+
+
+
 /* EXPERIENCE SECTION*/
+
 
 #experience {
     position: relative;
